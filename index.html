@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // first pattern
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        for (let i = 1; i <= 5; i++) {
+            {
+                for (let j = 1; j <= i; j++) {
+                    document.write("*")
+                }
+            }
+            document.write("<br>")
+        }
+
+
+        // second pattern
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+
+        // third pattern
+        // 5
+        // 54
+        // 543
+        // 5432
+        // 54321
+        for (i = 5; i >= 1; i--) {
+            {
+                for (j = 5; j >= i; j--) {
+                    document.write(j)
+                }
+            }
+            document.write("<br>")
+        }
+
+        // fourth pattern
+        // 54321
+        // 4321
+        // 321
+        // 21
+        // 1
+
+
+        for (let i = 5; i >= 1; i--) {
+            {
+                for (let j = i; j >= 1; j--) {
+                    document.write(j)
+                }
+            }
+            document.write("<br>")
+        }
+
+        // fifth pattern
+        // 12345
+        // 2345
+        // 345
+        // 45
+        // 5
+
+        for (let i = 1; i <= 5; i++) {
+            {
+                for (let j = i; j <= 5; j++) {
+                    document.write(j)
+                }
+            }
+            document.write("<br>")
+        }
+
+        // sixth pattern
+        // 1
+        // 23
+        // 456
+        // 78910
+        // 1112131415  
+        let k = 1
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(k)
+                k++
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+
+</html>
